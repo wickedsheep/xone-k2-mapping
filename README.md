@@ -8,16 +8,20 @@ Use this when no external mixer.
 
 Decks:
 
+```
 Deck A - 1 (the leftmost)
 Deck B - 2
 Deck C - 3
 Deck D - 4 (the rightmost)
+```
 
 Latching layers:
 
+```
 Layer 1 - Loop, EQ, volume and deck controls
 Layer 2 - TBD
 Layer 3 - Hotcue control
+```
 
 ```
   A    B    C    D
