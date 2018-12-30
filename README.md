@@ -1,55 +1,57 @@
-# A&H Xone:K2 Traktor mapping
+# a&h xone:k2 traktor mapping
 
-Opinionated (no effects) 4-channel Traktor MIDI mapping for Allen & Heath Xone:K2.
+opinionated (no effects) 4-channel traktor midi mapping for allen & heath xone:k2.
 
 ## xone-k2-solo.tsi
 
-Use this when no external mixer.
+use when no external mixer.
 
-Decks:
-
-```
-Deck A - 1 (the leftmost)
-Deck B - 2
-Deck C - 3
-Deck D - 4 (the rightmost)
-```
-
-Latching layers:
+decks:
 
 ```
-Layer 1 - Loop, EQ, volume and deck controls
-Layer 2 - TBD
-Layer 3 - Hotcue control
+deck a - 1 (the leftmost)
+deck b - 2
+deck c - 3
+deck d - 4 (the rightmost)
 ```
 
+latching layers:
+
 ```
-  A    B    C    D
+layer 1 - loop, eq, volume and deck controls
+layer 2 - tbd
+layer 3 - hotcue control
+```
+
+### layer 1 (red)
+
+```
+  a    b    c    d
 +---------------------+
 |                     |
-| +oo+ +oo+ +oo+ +oo+ | Select loop size (turn)
-| +oo+ +oo+ +oo+ +oo+ | Toggle loop on/off (press)
+| +oo+ +oo+ +oo+ +oo+ | select loop size (turn)
+| +oo+ +oo+ +oo+ +oo+ | toggle loop on/off (press)
 |                     |
 | +--+ +--+ +--+ +--+ |
-| |OO| |OO| |OO| |OO| | High frequency adjust
-| +--+ +--+ +--+ +--+ |
-|                     |
-| +--+ +--+ +--+ +--+ | 
-| +--+ +--+ +--+ +--+ | Toggle high frequency on/off
-|                     |
-| +--+ +--+ +--+ +--+ |
-| |OO| |OO| |OO| |OO| | Mid frequency adjust
-| +--+ +--+ +--+ +--+ |
-|                     |
-| +--+ +--+ +--+ +--+ |
-| +--+ +--+ +--+ +--+ | Toggle mid frequency on/off
-|                     |
-| +--+ +--+ +--+ +--+ |
-| |OO| |OO| |OO| |OO| | Low frequency adjust
+| |OO| |OO| |OO| |OO| | high frequency adjust
 | +--+ +--+ +--+ +--+ |
 |                     |
 | +--+ +--+ +--+ +--+ | 
-| +--+ +--+ +--+ +--+ | Toggle low frequency on/off
+| +--+ +--+ +--+ +--+ | toggle high frequency on/off
+|                     |
+| +--+ +--+ +--+ +--+ |
+| |OO| |OO| |OO| |OO| | mid frequency adjust
+| +--+ +--+ +--+ +--+ |
+|                     |
+| +--+ +--+ +--+ +--+ |
+| +--+ +--+ +--+ +--+ | toggle mid frequency on/off
+|                     |
+| +--+ +--+ +--+ +--+ |
+| |OO| |OO| |OO| |OO| | low frequency adjust
+| +--+ +--+ +--+ +--+ |
+|                     |
+| +--+ +--+ +--+ +--+ | 
+| +--+ +--+ +--+ +--+ | toggle low frequency on/off
 |                     |
 | +--+ +--+ +--+ +--+ |
 | |  | |  | |  | |  | |
@@ -66,30 +68,55 @@ Layer 3 - Hotcue control
 | |  | |++| |++| |  | |
 | |  | |++| |++| |  | |
 | |  | |  | |  | |  | |
-| +--+ +--+ +--+ +--+ | Volume inc/dec
+| +--+ +--+ +--+ +--+ | volume inc/dec
 |                     |
 | +--+ +--+ +--+ +--+ |
-| +--+ +--+ +--+ +--+ | Toggle monitor cue on/off
+| +--+ +--+ +--+ +--+ | toggle monitor cue on/off
 |                     |
 | +--+ +--+ +--+ +--+ |
-| +--+ +--+ +--+ +--+ | Toggle sync on/off
+| +--+ +--+ +--+ +--+ | toggle sync on/off
 |                     |
 | +--+ +--+ +--+ +--+ |
-| +--+ +--+ +--+ +--+ | Toggle play/pause
+| +--+ +--+ +--+ +--+ | toggle play/pause
 |                     |
 | +--+ +--+ +--+ +--+ |
-| +--+ +--+ +--+ +--+ | Load selected track
+| +--+ +--+ +--+ +--+ | load selected track
 |                     |
 | +--+ +oo+ +oo+ +--+ |
-| |L1| +oo+ +oo+ |E1| |
-| +--+  R1   R2  +--+ |
+| |  | +oo+ +oo+ |  | |
+| +--+           +--+ |
+|  l1   r1   r2       |
++---------------------+
+
+l1 - toggle between layers
+r1 - navigate tree (turn)
+r1 - expand collapse tree (press)
+r2 - navigate files (turn)
+r2 - toggle browser only mode on/off (press)
+```
+
+### layer 3 (green)
+
+```
++---------------------+
+|                     |
+| +--+ +--+ +--+ +--+ |
+| +--+ +--+ +--+ +--+ | 
+| f1   f2   f3   f4   |
+| +--+ +--+ +--+ +--+ |
+| +--+ +--+ +--+ +--+ | select hotcue (1-4)
+| c1   c2   c3   c4   |
+| +--+ +--+ +--+ +--+ |
+| +--+ +--+ +--+ +--+ | select hotcue (5-8)
+| c5   c6   c7   c8   |
+| +--+ +--+ +--+ +--+ |
+| +--+ +--+ +--+ +--+ |
 |                     |
 +---------------------+
 
-L1 - Toggle between layers
-R1 - Navigate tree (turn)
-R1 - Expand collapse tree (press)
-R2 - Navigate files (turn)
-R2 - Toggle browser only mode on/off (press)
+f1 - focus deck A
+f2 - focus deck B
+f3 - focus deck C
+f4 - focus deck D
 ```
 
