@@ -101,7 +101,7 @@ r2 - toggle browser only mode on/off (press)
 +---------------------+
 |                     |
 | +--+ +--+ +--+ +--+ |
-| +--+ +--+ +--+ +--+ | 
+| +--+ +--+ +--+ +--+ | focus deck (affects cue selection) 
 | f1   f2   f3   f4   |
 | +--+ +--+ +--+ +--+ |
 | +--+ +--+ +--+ +--+ | select hotcue (1-4)
@@ -114,9 +114,17 @@ r2 - toggle browser only mode on/off (press)
 |                     |
 +---------------------+
 
-f1 - focus deck A
-f2 - focus deck B
-f3 - focus deck C
-f4 - focus deck D
+f1 - focus deck a
+f2 - focus deck b
+f3 - focus deck c
+f4 - focus deck d
+c1 - select hotcue 1
+c2 - select hotcue 2
+c3 - select hotcue 3
+c4 - select hotcue 4
+c5 - select hotcue 5
+c6 - select hotcue 6
+c7 - select hotcue 7
+c8 - select hotcue 8
 ```
 
